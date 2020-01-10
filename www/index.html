@@ -9,8 +9,12 @@
         <title></title>
     </head>
     <body>
-        <button class="pure-button pure-button-primary" id="btn_Show">按钮</button>
-        <div id="text_Message"></div>
+        <div class="pure-g">
+            <div class="pure-u-1-4"><button class="pure-button"><i class="fa fa-cog"></i></button></div>
+            <div class="pure-u-1-4"></div>
+            <div class="pure-u-1-4"></div>
+            <div class="pure-u-1-4"></div>
+        </div>
     </body>
 </html>
 <script type="text/javascript" src="cordova.js"></script>
@@ -18,7 +22,7 @@
 <script type="text/javascript">
     var app = {
         IsDeviceReady : false
-    }
+    };
     (function () {
         document.addEventListener('deviceready', function () { app.IsDeviceReady = true; }, false);
         $("#btn_Show").click(function(){
