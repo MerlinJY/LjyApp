@@ -14,6 +14,9 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        let db = window.openDatabase('ss', '1.0', 'ss', 2097152);
+        document.getElementById('text_Message').innerText = db.version;
     }
 };
 app.initialize();
