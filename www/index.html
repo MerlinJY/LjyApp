@@ -10,9 +10,9 @@
     </head>
     <body>
         <div class="pure-g">
-            <div class="pure-u-1-4"><button class="pure-button"><i class="fa fa-cog"></i></button></div>
+            <div class="pure-u-1-4"><button class="pure-button" id="btn_Show"><i class="fa fa-cog"></i></button></div>
             <div class="pure-u-1-4"></div>
-            <div class="pure-u-1-4"></div>
+            <div class="pure-u-1-4"><span id="text_Message"></span></div>
             <div class="pure-u-1-4"></div>
         </div>
     </body>
@@ -23,8 +23,8 @@
     var app = {
         IsDeviceReady : false
     };
+    document.addEventListener('deviceready', function () { app.IsDeviceReady = true; }, false);
     (function () {
-        document.addEventListener('deviceready', function () { app.IsDeviceReady = true; }, false);
         $("#btn_Show").click(function(){
             $("#text_Message").text('abc');
         });
