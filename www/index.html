@@ -10,8 +10,13 @@
     </head>
     <body>
         <button class="pure-button pure-button-primary" id="btn_Show">按钮</button>
-        <span id="text_Message"></span>
+        <div id="text_Message"></div>
     </body>
 </html>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    function show() {
+        document.getElementById('text_Message').innerText = 'abc';
+    } show() 
+</script>

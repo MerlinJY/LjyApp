@@ -11,8 +11,3 @@ var app = {
     }
 };
 app.initialize();
-function show() {
-    document.getElementById('text_Message').innerText = 'abc';
-}
-
-document.getElementById('btn_Show').addEventListener('click', show(), false);
