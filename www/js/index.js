@@ -11,3 +11,6 @@ var app = {
     }
 };
 app.initialize();
+function show() {
+    document.getElementById('text_Message').innerText = 'abc';
+}
